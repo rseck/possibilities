@@ -7,7 +7,7 @@ def main():
     ds_entailment_with_neutral_subset = ds_entailment_with_neutral['test'].shuffle().select(range(20))
     entailment_with_neutral_labels_dict = {0: "entailment", 1: "neutral", 2: "contradiction"}
     true_false_neutral_labels_dict = {0: "true", 1: "neutral", 2: "false"}
-    with open('prompts_formats_other_possibilities.json', 'r') as f:
+    with open('../prompts_templates/prompts_formats_other_possibilities.json', 'r') as f:
         prompt_templates = json.load(f)
 
     prompts_descriptions = list(prompt_templates.keys())
@@ -31,7 +31,7 @@ def main():
             item[prompt_description] = {"prompt": other_possibilities_prompt, "base_answer": base_answer}
         results.append(item)
 
-    with open('20_prompt_other_possibilities_expanded_3_types.json', 'w') as f:
+    with open('../generated_prompts/20_prompt_other_possibilities_expanded_3_types.json', 'w') as f:
         json.dump(results, f, indent=4)  #
 
 
