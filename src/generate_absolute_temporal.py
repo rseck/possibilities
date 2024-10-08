@@ -23,12 +23,12 @@ def generate_prompts_from_tr_data():
     with open('prompts_templates/reasoning_prompt_templates.json', 'r') as f:
         prompt_templates = json.load(f)
 
-    with open('resources/temporal_relations_data.json', 'r') as f:
-        tr_data = json.load(f)
+    with open('resources/absolute_temporal_data.json', 'r') as f:
+        ta_data = json.load(f)
 
     prompts_descriptions = prompt_templates.keys()
-    tr_prompts = []
-    for item in tr_data:
+    ta_prompts = []
+    for item in ta_data:
         for prompt_description in prompts_descriptions:
             prompt_template = prompt_templates.get(prompt_description)
             prompt = prompt_template.format(premise=item['premise'], hypothesis=item['false_hypothesis'])
@@ -42,11 +42,11 @@ def generate_prompts_from_tr_data():
                 case _:
                     raise ValueError()
             item[prompt_description] = {"prompt": prompt, "answer": answer}
-        tr_prompts.append(item)
-    # with open('generated_prompts/30_prompts_relative_temporal_3_types.json', 'w') as f:
-    #     json.dump(tr_prompts, f, indent=4)  #
+        ta_prompts.append(item)
+    with open('generated_prompts/14_prompts_absolute_temporal_3_types.json', 'w') as f:
+        json.dump(ta_prompts, f, indent=4)  #
 
 
 if __name__ == '__main__':
-    generate_data()
-    # generate_prompts_from_tr_data()
+    # generate_data()
+    generate_prompts_from_tr_data()
