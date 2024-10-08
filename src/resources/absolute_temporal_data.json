@@ -1,0 +1,58 @@
+[
+    {
+        "premise": "the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated."
+    },
+    {
+        "premise": "the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated."
+    },
+    {
+        "premise": "the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated."
+    },
+    {
+        "premise": "the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated."
+    },
+    {
+        "premise": "the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached."
+    },
+    {
+        "premise": "the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached."
+    },
+    {
+        "premise": "the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached."
+    },
+    {
+        "premise": "the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached."
+    },
+    {
+        "premise": "I recently had a terrible sandwich. I ate a chicken sandwich yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken sandwich."
+    },
+    {
+        "premise": "I recently had a terrible soup I ate a chicken soup yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken soup."
+    },
+    {
+        "premise": "I recently had a terrible salad. I ate a chicken salad yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken salad."
+    },
+    {
+        "premise": "I had a terrible sandwich. I ate a chicken sandwich yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken sandwich."
+    },
+    {
+        "premise": "I had a terrible soup. I ate a chicken soup yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken soup."
+    },
+    {
+        "premise": "I had a terrible salad. I ate a chicken salad yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken salad."
+    }
+]
