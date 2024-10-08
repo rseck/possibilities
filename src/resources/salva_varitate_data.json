@@ -1,0 +1,266 @@
+[
+    {
+        "type": "basic",
+        "central_verb": "told",
+        "premise": "John told the children, 'Go home.' The children's home is at 4 Einstein Street.",
+        "false_hypothesis": "John told the children, 'Go to Einstein Street'"
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "told",
+        "premise": "John told the children, 'Go home.' The children's home is at 4 Einstein Street. John does not know where the children live.",
+        "false_hypothesis": "John told the children, 'Go to Einstein Street'"
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "told",
+        "premise": "John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.",
+        "false_hypothesis": "John told the children the words 'Go to Einstein Street'"
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "told",
+        "premise": "John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.  John does not know where the children live.",
+        "false_hypothesis": "John told the children the words 'Go to Einstein Street'"
+    },
+    {
+        "type": "basic",
+        "central_verb": "said",
+        "premise": "Harry said that John kissed Mary. John is the richest kid in class.",
+        "false_hypothesis": "Harry said that the richest kid in class kissed Mary."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "said",
+        "premise": "Harry said that John kissed Mary. John is the richest kid in class. Harry does not know who is the richest kid in class.",
+        "false_hypothesis": "Harry said that the richest kid in class kissed Mary."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "said",
+        "premise": "John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town.",
+        "false_hypothesis": "John said he enjoyed eating in the most expensive restaurant in town."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "said",
+        "premise": "John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town. John doesn't know the restaurants prices in town.",
+        "false_hypothesis": "John said he enjoyed eating in the most expensive restaurant in town."
+    },
+    {
+        "type": "basic",
+        "central_verb": "know",
+        "premise": "the cop knows that the thief jumped over the fence. The thief is McGee.",
+        "false_hypothesis": "the cop knows that McGee jumped over the fence."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "know",
+        "premise": "the cop knows that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.",
+        "false_hypothesis": "the cop knows that McGee jumped over the fence."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "know",
+        "premise": "The murderer escaped through the window, and the cop knew. The murderer is McGee.",
+        "false_hypothesis": "the cop knows that McGee escaped through the window."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "know",
+        "premise": "The murderer escaped through the window, and the cop knew. The murderer is McGee. The cop is investigating who commited the crime.",
+        "false_hypothesis": "the cop knows that McGee escaped through the window."
+    },
+    {
+        "type": "basic",
+        "central_verb": "suspect",
+        "premise": "the cop suspects that the thief jumped over the fence. The thief is McGee.",
+        "false_hypothesis": "the cop suspects that McGee jumped over the fence."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "suspect",
+        "premise": "the cop suspects that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.",
+        "false_hypothesis": "the cop suspects that McGee jumped over the fence."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "suspect",
+        "premise": "The murderer escaped through the window, and the cop suspected. The murderer is McGee.",
+        "false_hypothesis": "the cop suspects that McGee escaped through the window."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "suspect",
+        "premise": "The murderer escaped through the window, and the cop suspects. The murderer is McGee. The cop is investigating who commited the crime.",
+        "false_hypothesis": "the cop suspects that McGee escaped through the window."
+    },
+    {
+        "type": "basic",
+        "central_verb": "believe",
+        "premise": "John believes that his son is missing since the early morning. Isaac Is John's son.",
+        "false_hypothesis": "John believes that Isaac is missing since the early morning."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "believe",
+        "premise": "John believes that his son is missing since the early morning. Isaac Is John's son. Isaac is with his father since the early morning.",
+        "false_hypothesis": "John believes that Isaac is missing since the early morning."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "believe",
+        "premise": "John Believes that a spy took his belongings. The spy's name is Jerry.",
+        "false_hypothesis": "John believes that Jerry took his stuff."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "believe",
+        "premise": "John Believes that a spy took his belongings. John didn't see the spy. The spy's name is Jerry.",
+        "false_hypothesis": "John believes that Jerry took his stuff."
+    },
+    {
+        "type": "basic",
+        "central_verb": "discover",
+        "premise": "John discovered that his gun was stolen from his shed. Bruce took it.",
+        "false_hypothesis": "John discovered that Bruce stole his gun."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "discover",
+        "premise": "John discovered that his gun was stolen from his shed. Bruce took it. John doesn't know who took it.",
+        "false_hypothesis": "John discovered that Bruce stole his gun."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "discover",
+        "premise": "John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.",
+        "false_hypothesis": "John discovered Noam Ke."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "discover",
+        "premise": "John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke. John did not know it is familiar.",
+        "false_hypothesis": "John discovered Noam Ke."
+    },
+    {
+        "type": "basic",
+        "central_verb": "assert",
+        "premise": "John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi.",
+        "false_hypothesis": "John asserts that the queen of Bokolulu lives in tootoosi."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "assert",
+        "premise": "John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi. John does not know tootoosi.",
+        "false_hypothesis": "John asserts that the queen of Bokolulu lives in tootoosi."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "assert",
+        "premise": "John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate.",
+        "false_hypothesis": "John asserts that Marie started working for QANO corperate."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "assert",
+        "premise": "John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.",
+        "false_hypothesis": "John asserts that Marie started working for QANO corperate."
+    },
+    {
+        "type": "basic",
+        "central_verb": "claim",
+        "premise": "John claims that the queen of Bokolulu lives in de-chrashp. de-chrashp is in tootoosi county.",
+        "false_hypothesis": "John claims that the queen of Bokolulu lives in tootoosi."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "claim",
+        "premise": "John claims that the queen of Bokolulu lives in de-chrashp. John does not know the county of de-chrashp.",
+        "false_hypothesis": "John claims that the queen of Bokolulu lives in tootoosi."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "claim",
+        "premise": "John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate.",
+        "false_hypothesis": "John claims that Marie started working for QANO corperate."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "claim",
+        "premise": "John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.",
+        "false_hypothesis": "John claims that Marie started working for QANO corperate."
+    },
+    {
+        "type": "basic",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president.",
+        "false_hypothesis": "Jamie Is looking for the President."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president. Jamie does not know that the president is filling both roles.",
+        "false_hypothesis": "Jamie Is looking for the President."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for his mom. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. "
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. "
+    },
+    {
+        "type": "basic",
+        "central_verb": "wish for",
+        "premise": "Jamie wishes to meet the secretary of defence. The secretary of defence is the president.",
+        "false_hypothesis": "Jamie wishes to meet the president."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "wish for",
+        "premise": "Jamie wishes to meet the secretary of defence. The secretary of defence is the president. Jamie does not know that the president is filling both roles.",
+        "false_hypothesis": "Jamie wishes to meet the president."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "wish for",
+        "premise": "Jamie is wishing to meet his mom. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. "
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "wish for",
+        "premise": "Jamie is wishing to meet his mom, whose name he never knew. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. "
+    },
+    {
+        "type": "basic",
+        "central_verb": "resigns",
+        "premise": "The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position.",
+        "false_hypothesis": "The chairwoman of the Entertainment Committee has resigned from the position."
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "resigns",
+        "premise": "The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position of treasurer.",
+        "false_hypothesis": "The chairwoman of the Entertainment Committee has resigned from the position."
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "resigns",
+        "premise": "The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job.",
+        "false_hypothesis": "The head of the technologies department quit her job."
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "resigns",
+        "premise": "The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job as Chief Product Officer.",
+        "false_hypothesis": "The head of the technologies department quit her job."
+    }
+]
