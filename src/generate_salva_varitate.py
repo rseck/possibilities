@@ -1,8 +1,11 @@
 import json
 
 import pandas as pd
+
 file_name = "/Users/roeeesquira/Study/מדעי המחשב/תואר שני/לקראת תזה/experiments.xlsx"
 sv_data_point_template = {"type": "", "central_verb": "", "premise": "", "false_hypothesis": ""}
+
+
 def generate_data():
     sv_data = []
     df = pd.read_excel(file_name, sheet_name='salva_varitate_prompts')
@@ -40,12 +43,37 @@ def generate_data():
     with open('resources/salva_varitate_data.json', 'w') as f:
         json.dump(sv_data, f, indent=4)  #
 
-    #open excel
-    #convert excel to json
-    # save each suting premise and hypothesis together and main verb, save to resources folder
-    # manually create json for formats of entailement and entail/contradiction/neutral
-    # generate all the prompts
-    pass
+
+def generate_prompts_from_sv_data():
+    with open('prompts_templates/reasoning_prompt_templates.json', 'r') as f:
+        prompt_templates = json.load(f)
+
+    with open('resources/salva_varitate_data.json', 'r') as f:
+        sv_data = json.load(f)
+
+    prompts_descriptions = prompt_templates.keys()
+    sv_prompts = []
+    for item in sv_data:
+        for prompt_description in prompts_descriptions:
+            prompt_template = prompt_templates.get(prompt_description)
+            prompt = prompt_template.format(premise=item['premise'], hypothesis=item['false_hypothesis'])
+            print(prompt)
+            match prompt_description:
+                case 'entailment_with_neutral':
+                    answer = "contradiction"
+                case 'entailment':
+                    answer = 'no'
+                case 'true_false_neutral':
+                    answer = "False"
+                case _:
+                    raise ValueError()
+            item[prompt_description] = {"prompt": prompt, "answer": answer}
+        sv_prompts.append(item)
+
+    with open('generated_prompts/44_prompts_salva_varitate_3_types.json', 'w') as f:
+        json.dump(sv_prompts, f, indent=4)  #
+
 
 if __name__ == '__main__':
-    generate_data()
+    # generate_data()
+    generate_prompts_from_sv_data()
