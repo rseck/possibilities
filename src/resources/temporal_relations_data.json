@@ -1,0 +1,182 @@
+[
+    {
+        "premise_type": "premise",
+        "premise": "everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the prevaling party is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the prevaling party is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council."
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council."
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council."
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council."
+    }
+]

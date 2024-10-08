@@ -1,0 +1,1866 @@
+[
+    {
+        "premise": "John's [var] broke",
+        "hypothesis": "John's [var] broke",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] broke\n- **Hypothesis**: John's [var] broke\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Association (A and B are related but are independent entities)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Composition (A is made up of B, and B cannot exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John's [var] broke",
+        "hypothesis": "John's [var] broke",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] broke\n- **Hypothesis**: John's [var] broke\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John's [var] broke",
+        "hypothesis": "John's [var] broke",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] broke\n- **Hypothesis**: John's [var] broke\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John's [var] malfunctioned",
+        "hypothesis": "John's [var] malfunctioned",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] malfunctioned\n- **Hypothesis**: John's [var] malfunctioned\n- **Possible Answers**: [['No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Composition (A is made up of B, and B cannot exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John's [var] malfunctioned",
+        "hypothesis": "John's [var] malfunctioned",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] malfunctioned\n- **Hypothesis**: John's [var] malfunctioned\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John's [var] malfunctioned",
+        "hypothesis": "John's [var] malfunctioned",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John's [var] malfunctioned\n- **Hypothesis**: John's [var] malfunctioned\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John resides in [var]\n- **Hypothesis**: John resides in [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John lives in [var]\n- **Hypothesis**: John lives in [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John works for [var]\n- **Hypothesis**: John works for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is an employee for [var]\n- **Hypothesis**: John is an employee for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Containment (A contains B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John loves [var]\n- **Hypothesis**: John loves [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John adores [var]\n- **Hypothesis**: John adores [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John has affection for [var]\n- **Hypothesis**: John has affection for [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Containment (A contains B, but B can exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John takes care of [var]\n- **Hypothesis**: John takes care of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible', 'Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Inheritance (A is a type of B, sharing characteristics)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Association (A and B are related but are independent entities)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is part of [var]\n- **Hypothesis**: John is part of [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Composition (A is made up of B, and B cannot exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'No relation from the above list is possible', 'Composition (A is made up of B, and B cannot exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "No relation from the above list is possible",
+                "Composition (A is made up of B, and B cannot exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Association (A and B are related but are independent entities)', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Association (A and B are related but are independent entities)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Inheritance (A is a type of B, sharing characteristics)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Aggregation (A is made up of B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Composition (A is made up of B, and B cannot exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Composition (A is made up of B, and B cannot exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Containment (A contains B, but B can exist independently of A)', 'Inheritance (A is a type of B, sharing characteristics)', 'Aggregation (A is made up of B, but B can exist independently of A)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Aggregation (A is made up of B, but B can exist independently of A)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['No relation from the above list is possible', 'Aggregation (A is made up of B, but B can exist independently of A)', 'Containment (A contains B, but B can exist independently of A)', 'Association (A and B are related but are independent entities)']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "No relation from the above list is possible",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "Containment (A contains B, but B can exist independently of A)",
+                "Association (A and B are related but are independent entities)"
+            ]
+        }
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)",
+        "entailment": {
+            "prompt": "### Task:\nYou are provided with a **premise** and a **hypothesis**, each containing a placeholder marked as `[var_i]`. Your task is to analyze the relationship between the `[var_1]` in the premise and the `[var_2]` in the hypothesis, and determine how to modify the premise such that it **entails** the hypothesis. \n\nYou are given a list of possible relationships. Select the most appropriate single word from the list and return it as your answer. explain why it is true.\n\n---\n\n### Example:\n\n#### Premise:\n\"The [var_1] is flying high.\"\n\n#### Hypothesis:\n\"The [var_2] is flying high.\"\n\n#### Possible Answers:\n- synonym\n- antonym\n- hypernym\n- hyponym\n- unrelated\n\n#### Example Output:\nhyponym\n\n---\n\n### Input:\n- **Premise**: John is commited to the [var]\n- **Hypothesis**: John is commited to the [var]\n- **Possible Answers**: [['Inheritance (A is a type of B, sharing characteristics)', 'Association (A and B are related but are independent entities)', 'Aggregation (A is made up of B, but B can exist independently of A)', 'No relation from the above list is possible']]\n\n### Output:",
+            "answer": "Aggregation (A is made up of B, but B can exist independently of A)",
+            "possible_answers_given": [
+                "Inheritance (A is a type of B, sharing characteristics)",
+                "Association (A and B are related but are independent entities)",
+                "Aggregation (A is made up of B, but B can exist independently of A)",
+                "No relation from the above list is possible"
+            ]
+        }
+    }
+]

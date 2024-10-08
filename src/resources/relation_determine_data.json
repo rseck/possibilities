@@ -1,0 +1,104 @@
+[
+    {
+        "premise": "John's [var] broke",
+        "hypothesis": "John's [var] broke",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)"
+    },
+    {
+        "premise": "John's [var] malfunctioned",
+        "hypothesis": "John's [var] malfunctioned",
+        "possible_answers": [
+            "Composition",
+            "Inheritance",
+            "Containment"
+        ],
+        "possible_answers_explanations": "Composition (car, engine), Inheritance (car, vehicle), Containment (car, engine)"
+    },
+    {
+        "premise": "John resides in [var]",
+        "hypothesis": "John resides in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)"
+    },
+    {
+        "premise": "John lives in [var]",
+        "hypothesis": "John lives in [var]",
+        "possible_answers": [
+            "Containment",
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Containment (de hague, Holland), Inheritance (a house, neigborhood)"
+    },
+    {
+        "premise": "John works for [var]",
+        "hypothesis": "John works for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)"
+    },
+    {
+        "premise": "John is an employee for [var]",
+        "hypothesis": "John is an employee for [var]",
+        "possible_answers": [
+            "Containment"
+        ],
+        "possible_answers_explanations": "Containment (department, company)"
+    },
+    {
+        "premise": "John loves [var]",
+        "hypothesis": "John loves [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)"
+    },
+    {
+        "premise": "John adores [var]",
+        "hypothesis": "John adores [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)"
+    },
+    {
+        "premise": "John has affection for [var]",
+        "hypothesis": "John has affection for [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)"
+    },
+    {
+        "premise": "John takes care of [var]",
+        "hypothesis": "John takes care of [var]",
+        "possible_answers": [
+            "Inheritance"
+        ],
+        "possible_answers_explanations": "Inheritance (Dogs, animals)"
+    },
+    {
+        "premise": "John is part of [var]",
+        "hypothesis": "John is part of [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)"
+    },
+    {
+        "premise": "John is commited to the [var]",
+        "hypothesis": "John is commited to the [var]",
+        "possible_answers": [
+            "Aggregation"
+        ],
+        "possible_answers_explanations": "Aggregation (team, players)"
+    }
+]
