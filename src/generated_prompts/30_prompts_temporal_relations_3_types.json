@@ -1,0 +1,542 @@
+[
+    {
+        "premise_type": "premise",
+        "premise": "everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the winner can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future winner is one of the group members. everyone in the group can lose this game.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the winner of this game can lose this game.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future winner is one of the group members. everyone in the group can lose this game.\nText 2 (Hypothesis): the winner of this game can lose this game.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the elected president can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future elected president is one of the candidates. Every candidate can lose this election.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the elected president of this election can lose this election.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future elected president is one of the candidates. Every candidate can lose this election.\nText 2 (Hypothesis): the elected president of this election can lose this election.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the prevaling party is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the prevaling party is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the prevaling party is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the prevailing party can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the prevailing party of this trial can lose this trial.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the prevaling party of this trial is one of the two sides of this trial. Both sides can lose this trial.\nText 2 (Hypothesis): the prevailing party of this trial can lose this trial.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the highest bidder is one of the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the highest bidder can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the highest bidder of this auction can lose this auction.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the person who will bid the highest amount is among the the bidders in this auction. Every bidder can lose this auction.\nText 2 (Hypothesis): the highest bidder of this auction can lose this auction.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "premise",
+        "premise": "everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise",
+        "premise": "the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the sole survivor is a part of this tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "hypothesis",
+        "false_hypothesis": "the sole survivor can be voted out in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor can be voted out in this tribal council.",
+            "answer": "False"
+        }
+    },
+    {
+        "premise_type": "explicit premise with future",
+        "premise": "the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.",
+        "hypothesis_type": "explicit hypothesis",
+        "false_hypothesis": "the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "no"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the future sole survivor of this tribe is in the tribe for this tribal council. everybody can be voted out in this tribal council.\nText 2 (Hypothesis): the sole survivor of this tribe can be voted out of this tribe in this tribal council.",
+            "answer": "False"
+        }
+    }
+]
