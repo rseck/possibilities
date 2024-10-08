@@ -1,0 +1,926 @@
+[
+    {
+        "type": "basic",
+        "central_verb": "told",
+        "premise": "John told the children, 'Go home.' The children's home is at 4 Einstein Street.",
+        "false_hypothesis": "John told the children, 'Go to Einstein Street'",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze them carefully:\n\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'\n\nAnalysis:\n1. In Text 1, John tells the children to \"Go home.\"\n2. Text 1 also provides additional information that the children's home is at 4 Einstein Street.\n3. In Text 2, John is said to have told the children to \"Go to Einstein Street.\"\n\nWhile the end result of following John's instruction in Text 1 would be the same as following the instruction in Text 2 (the children would end up on Einstein Street), the actual words John used are different in each text.\n\nText 1 specifies that John said \"Go home,\" not \"Go to Einstein Street.\" Even though we know the home is on Einstein Street, John didn't explicitly mention Einstein Street in his instruction according to Text 1.\n\nTherefore, the relationship between Text 1 and Text 2 is:\n\nFalse\n\nText 1 contradicts Text 2 because it provides a different quote for what John actually said to the children. While the destination is the same, the wording of John's instruction is different, making the statement in Text 2 false based on the information given in Text 1."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "told",
+        "premise": "John told the children, 'Go home.' The children's home is at 4 Einstein Street. John does not know where the children live.",
+        "false_hypothesis": "John told the children, 'Go to Einstein Street'",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street. John does not know where the children live.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street. John does not know where the children live.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John told the children, 'Go home.' The children's home is at 4 Einstein Street. John does not know where the children live.\nText 2 (Hypothesis): John told the children, 'Go to Einstein Street'",
+            "answer": "False",
+            "model_reply": "To answer this question, I'll carefully analyze both texts and their relationship:\n\nText 1 (Premise):\n- John told the children to \"Go home.\"\n- The children's home is at 4 Einstein Street.\n- John does not know where the children live.\n\nText 2 (Hypothesis):\n- John told the children to \"Go to Einstein Street.\"\n\nAnalysis:\n1. Text 1 states that John told the children to \"Go home,\" not specifically to go to Einstein Street.\n2. Although the children's home is on Einstein Street, Text 1 explicitly states that John does not know where the children live.\n3. Therefore, John could not have told the children to go to Einstein Street, as he doesn't know their address.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is False. Text 1 contradicts Text 2 because it clearly states that John doesn't know where the children live, so he couldn't have told them to go to Einstein Street specifically. Instead, he simply told them to go home."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "told",
+        "premise": "John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.",
+        "false_hypothesis": "John told the children the words 'Go to Einstein Street'",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 (Premise):\n- John told the children to \"Go home.\"\n- The children's home is at 4 Einstein Street.\n\nText 2 (Hypothesis):\n- John told the children to \"Go to Einstein Street.\"\n\nAnalysis:\nWhile Text 1 states that John told the children to \"Go home,\" and we know that their home is on Einstein Street, Text 2 claims that John specifically told them to \"Go to Einstein Street.\" \n\nThe actual words John used, according to Text 1, were \"Go home,\" not \"Go to Einstein Street.\" Although the end result might be the same (the children going to Einstein Street), the specific words attributed to John in Text 2 are different from what is stated in Text 1.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is False. \n\nText 1 contradicts Text 2 because it explicitly states that John used different words than what is claimed in Text 2. While the intention might be similar, the actual words spoken are different, making the hypothesis false based on the information provided in the premise."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "told",
+        "premise": "John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.  John does not know where the children live.",
+        "false_hypothesis": "John told the children the words 'Go to Einstein Street'",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.  John does not know where the children live.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.  John does not know where the children live.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John told the children the words: 'Go home.' The children's home is at 4 Einstein Street.  John does not know where the children live.\nText 2 (Hypothesis): John told the children the words 'Go to Einstein Street'",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given:\n\nText 1 states:\n1. John told the children to \"Go home.\"\n2. The children's home is at 4 Einstein Street.\n3. John does not know where the children live.\n\nText 2 claims:\nJohn told the children to \"Go to Einstein Street.\"\n\nAnalyzing this information:\n\n1. John specifically said \"Go home,\" not \"Go to Einstein Street.\"\n2. Although the children's home is on Einstein Street, John doesn't know this information.\n3. Text 2 contradicts Text 1 by claiming John said something he didn't say and knew information he didn't have.\n\nGiven this analysis, the correct answer is:\n\nFalse: Text 1 contradicts Text 2.\n\nThe premise (Text 1) clearly states what John said and that he doesn't know where the children live, which directly contradicts the claim made in the hypothesis (Text 2)."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "said",
+        "premise": "Harry said that John kissed Mary. John is the richest kid in class.",
+        "false_hypothesis": "Harry said that the richest kid in class kissed Mary.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in both texts:\n\nText 1 (Premise):\n- Harry said that John kissed Mary.\n- John is the richest kid in class.\n\nText 2 (Hypothesis):\n- Harry said that the richest kid in class kissed Mary.\n\nAnalysis:\n1. Text 1 states that Harry said John kissed Mary.\n2. Text 1 also informs us that John is the richest kid in class.\n3. Text 2 claims that Harry said the richest kid in class kissed Mary.\n\nGiven this information, we can conclude that Text 2 is True based on Text 1. Here's why:\n\n- John is identified as the richest kid in class in Text 1.\n- Text 1 states that Harry said John kissed Mary.\n- Therefore, when Text 2 says that Harry said the richest kid in class kissed Mary, it is equivalent to saying that Harry said John kissed Mary, which is true according to Text 1.\n\nThe hypothesis in Text 2 is a logical conclusion that can be drawn from the information provided in Text 1.\n\nAnswer: True"
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "said",
+        "premise": "Harry said that John kissed Mary. John is the richest kid in class. Harry does not know who is the richest kid in class.",
+        "false_hypothesis": "Harry said that the richest kid in class kissed Mary.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class. Harry does not know who is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class. Harry does not know who is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Harry said that John kissed Mary. John is the richest kid in class. Harry does not know who is the richest kid in class.\nText 2 (Hypothesis): Harry said that the richest kid in class kissed Mary.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in each:\n\nText 1 (Premise):\n1. Harry said that John kissed Mary.\n2. John is the richest kid in class.\n3. Harry does not know who is the richest kid in class.\n\nText 2 (Hypothesis):\nHarry said that the richest kid in class kissed Mary.\n\nAnalysis:\n1. Text 1 states that Harry said John kissed Mary, but Harry doesn't know that John is the richest kid in class.\n2. Text 2 claims that Harry said the richest kid in class kissed Mary.\n3. While it's true that John (who kissed Mary according to Harry) is actually the richest kid in class, Harry doesn't know this information.\n4. Therefore, Harry couldn't have made the statement in Text 2, as he lacks the knowledge to connect John with being the richest kid in class.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is False. Text 1 contradicts Text 2 because Harry doesn't have the information to make the statement attributed to him in Text 2. The premise explicitly states that Harry does not know who the richest kid in class is, so he couldn't have made a statement connecting the richest kid to the kissing incident."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "said",
+        "premise": "John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town.",
+        "false_hypothesis": "John said he enjoyed eating in the most expensive restaurant in town.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information provided:\n\nText 1 (Premise):\n- John said he enjoyed eating in the \"La Joy\".\n- \"La Joy\" is the most expensive restaurant in town.\n\nText 2 (Hypothesis):\n- John said he enjoyed eating in the most expensive restaurant in town.\n\nAnalysis:\n1. Text 1 states that John enjoyed eating in \"La Joy\".\n2. Text 1 also informs us that \"La Joy\" is the most expensive restaurant in town.\n3. Text 2 combines these two pieces of information, stating that John enjoyed eating in the most expensive restaurant in town.\n\nConclusion:\nThe answer is True.\n\nExplanation:\nText 2 is a logical conclusion based on the information provided in Text 1. Since John enjoyed eating in \"La Joy\", and \"La Joy\" is described as the most expensive restaurant in town, it directly follows that John enjoyed eating in the most expensive restaurant in town. Text 2 doesn't add any new information or contradict Text 1; it simply combines the two statements from Text 1 into a single, accurate statement."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "said",
+        "premise": "John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town. John doesn't know the restaurants prices in town.",
+        "false_hypothesis": "John said he enjoyed eating in the most expensive restaurant in town.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town. John doesn't know the restaurants prices in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town. John doesn't know the restaurants prices in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John said he enjoyed eating in the \"La Joy\". \"La Joy\" is the most expensive restaurant in town. John doesn't know the restaurants prices in town.\nText 2 (Hypothesis): John said he enjoyed eating in the most expensive restaurant in town.",
+            "answer": "False",
+            "model_reply": "To answer this question, let's analyze the relationship between Text 1 (premise) and Text 2 (hypothesis):\n\nText 1 provides three pieces of information:\n1. John said he enjoyed eating in \"La Joy\".\n2. \"La Joy\" is the most expensive restaurant in town.\n3. John doesn't know the restaurants prices in town.\n\nText 2 states:\nJohn said he enjoyed eating in the most expensive restaurant in town.\n\nComparing these:\n- John did say he enjoyed eating in \"La Joy\" (which happens to be the most expensive restaurant).\n- However, John doesn't know the restaurant prices in town, so he couldn't have known or stated that it was the most expensive restaurant.\n\nThe answer is: False\n\nExplanation: While it's true that John enjoyed eating in what is actually the most expensive restaurant, Text 2 implies that John knew and stated this fact. However, Text 1 explicitly states that John doesn't know the restaurant prices in town. Therefore, Text 1 contradicts Text 2, making the statement false."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "know",
+        "premise": "the cop knows that the thief jumped over the fence. The thief is McGee.",
+        "false_hypothesis": "the cop knows that McGee jumped over the fence.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "False",
+            "model_reply": "To answer this question, let's analyze the information given in both texts:\n\nText 1 (Premise):\n1. The cop knows that the thief jumped over the fence.\n2. The thief is McGee.\n\nText 2 (Hypothesis):\nThe cop knows that McGee jumped over the fence.\n\nAnalysis:\n1. Text 1 establishes that the cop knows about a thief jumping over a fence.\n2. Text 1 also identifies the thief as McGee.\n3. Combining these two pieces of information, we can conclude that the cop knows that McGee (who is the thief) jumped over the fence.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is True.\n\nExplanation:\nText 2 is a logical conclusion that can be directly drawn from the information provided in Text 1. Since the cop knows about the thief's action and the thief is identified as McGee, it follows that the cop knows that McGee jumped over the fence. The hypothesis in Text 2 is supported by and consistent with the premise in Text 1."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "know",
+        "premise": "the cop knows that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.",
+        "false_hypothesis": "the cop knows that McGee jumped over the fence.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the cop knows that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee jumped over the fence.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information provided in both texts:\n\nText 1 (Premise) states:\n1. The cop knows that the thief jumped over the fence.\n2. The thief is McGee.\n3. The cop does not know who committed the crime.\n\nText 2 (Hypothesis) states:\nThe cop knows that McGee jumped over the fence.\n\nAnalysis:\n1. The cop knows that the thief jumped over the fence.\n2. We are told that the thief is McGee.\n3. However, the cop does not know who committed the crime, which implies that the cop doesn't know that McGee is the thief.\n\nGiven this information, we can conclude that while we know McGee is the thief, the cop doesn't have this information. The cop knows that someone (the thief) jumped over the fence, but doesn't know that this person is McGee.\n\nTherefore, the correct answer is: False\n\nExplanation: Text 1 contradicts Text 2 because Text 1 explicitly states that the cop does not know who committed the crime, which means the cop doesn't know that McGee is the thief. As a result, the cop cannot know that McGee specifically jumped over the fence, even though we, as outside observers, know this to be true."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "know",
+        "premise": "The murderer escaped through the window, and the cop knew. The murderer is McGee.",
+        "false_hypothesis": "the cop knows that McGee escaped through the window.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between the premise (Text 1) and the hypothesis (Text 2), let's analyze the information given in both texts:\n\nText 1 (Premise) states:\n1. The murderer escaped through the window.\n2. The cop knew (about the escape through the window).\n3. The murderer is McGee.\n\nText 2 (Hypothesis) states:\nThe cop knows that McGee escaped through the window.\n\nAnalyzing the relationship:\n1. Text 1 establishes that the murderer escaped through the window and the cop knew about this.\n2. Text 1 also identifies the murderer as McGee.\n3. Combining these pieces of information, we can conclude that the cop knew that McGee (who is the murderer) escaped through the window.\n\nTherefore, the information in Text 2 is directly supported by the information given in Text 1.\n\nAnswer: True\n\nThe hypothesis (Text 2) is True given the premise (Text 1). The premise provides all the necessary information to support the statement in the hypothesis."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "know",
+        "premise": "The murderer escaped through the window, and the cop knew. The murderer is McGee. The cop is investigating who commited the crime.",
+        "false_hypothesis": "the cop knows that McGee escaped through the window.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop knew. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop knows that McGee escaped through the window.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (Premise) and Text 2 (Hypothesis), let's analyze the information provided in both texts:\n\nText 1 (Premise) tells us:\n1. The murderer escaped through the window.\n2. The cop knew about this escape.\n3. The murderer is identified as McGee.\n4. The cop is investigating who committed the crime.\n\nText 2 (Hypothesis) states:\nThe cop knows that McGee escaped through the window.\n\nAnalyzing the relationship:\n1. Text 1 explicitly states that the murderer escaped through the window and the cop knew about this.\n2. Text 1 also clearly identifies McGee as the murderer.\n3. Combining these two pieces of information, we can conclude that the cop knows that McGee (who is the murderer) escaped through the window.\n\nTherefore, the correct answer is:\n\nTrue: Text 2 is True given Text 1.\n\nThe information in Text 2 is directly supported by the information provided in Text 1, making the hypothesis true based on the given premise."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "suspect",
+        "premise": "the cop suspects that the thief jumped over the fence. The thief is McGee.",
+        "false_hypothesis": "the cop suspects that McGee jumped over the fence.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 (Premise):\n- The cop suspects that the thief jumped over the fence.\n- The thief is McGee.\n\nText 2 (Hypothesis):\n- The cop suspects that McGee jumped over the fence.\n\nAnalysis:\n1. Text 1 states that the cop suspects the thief jumped over the fence.\n2. Text 1 also identifies the thief as McGee.\n3. Text 2 directly states that the cop suspects McGee jumped over the fence.\n\nGiven this information, we can conclude that Text 2 is a logical consequence of the information provided in Text 1. The premise establishes that the cop suspects the thief jumped over the fence and that the thief is McGee. Therefore, it directly follows that the cop suspects McGee jumped over the fence.\n\nAnswer: True\n\nThe hypothesis (Text 2) is True given the premise (Text 1). The information in Text 1 directly supports and leads to the conclusion stated in Text 2."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "suspect",
+        "premise": "the cop suspects that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.",
+        "false_hypothesis": "the cop suspects that McGee jumped over the fence.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the cop suspects that the thief jumped over the fence. The thief is McGee. The cop does not know who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee jumped over the fence.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 (Premise):\n1. The cop suspects that the thief jumped over the fence.\n2. The thief is McGee.\n3. The cop does not know who committed the crime.\n\nText 2 (Hypothesis):\nThe cop suspects that McGee jumped over the fence.\n\nAnalysis:\n1. The premise states that the cop suspects the thief jumped over the fence.\n2. The premise also states that the thief is McGee.\n3. However, the premise explicitly states that the cop does not know who committed the crime.\n\nGiven this information, we can conclude that the cop's suspicion about the thief jumping over the fence does not directly translate to a suspicion about McGee specifically, because the cop doesn't know who the thief is.\n\nTherefore, the answer is: False\n\nExplanation: Text 1 contradicts Text 2 because while the cop suspects that the thief jumped over the fence, and we as readers know that McGee is the thief, the premise explicitly states that the cop does not know who committed the crime. This means the cop cannot suspect McGee specifically of jumping over the fence, as suggested in Text 2."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "suspect",
+        "premise": "The murderer escaped through the window, and the cop suspected. The murderer is McGee.",
+        "false_hypothesis": "the cop suspects that McGee escaped through the window.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The murderer escaped through the window, and the cop suspected. The murderer is McGee.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop suspected. The murderer is McGee.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop suspected. The murderer is McGee.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "False",
+            "model_reply": "To analyze the relationship between Text 1 (premise) and Text 2 (hypothesis), let's break down the information given in each:\n\nText 1 (Premise):\n- The murderer escaped through the window.\n- The cop suspected (something).\n- The murderer is McGee.\n\nText 2 (Hypothesis):\n- The cop suspects that McGee escaped through the window.\n\nNow, let's evaluate:\n\n1. Text 1 states that the murderer escaped through the window, and we're told that McGee is the murderer.\n2. Text 1 also mentions that the cop suspected, but it doesn't specify what the cop suspected.\n3. Text 2 combines these pieces of information, stating that the cop suspects McGee (the murderer) escaped through the window.\n\nWhile Text 1 doesn't explicitly state that the cop suspected McGee of escaping through the window, it provides all the necessary information to make this a reasonable conclusion. The cop suspected something, and we know that McGee (the murderer) escaped through the window.\n\nGiven this analysis, the best answer is:\n\nTrue: Text 2 is True given Text 1.\n\nThe hypothesis in Text 2 is a logical inference from the information provided in Text 1, even though it's not explicitly stated. The premise supports the hypothesis without contradicting it."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "suspect",
+        "premise": "The murderer escaped through the window, and the cop suspects. The murderer is McGee. The cop is investigating who commited the crime.",
+        "false_hypothesis": "the cop suspects that McGee escaped through the window.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The murderer escaped through the window, and the cop suspects. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop suspects. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The murderer escaped through the window, and the cop suspects. The murderer is McGee. The cop is investigating who commited the crime.\nText 2 (Hypothesis): the cop suspects that McGee escaped through the window.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 provides the following information:\n1. The murderer escaped through the window.\n2. The cop suspects.\n3. The murderer is McGee.\n4. The cop is investigating who committed the crime.\n\nText 2 states:\nThe cop suspects that McGee escaped through the window.\n\nAnalyzing the relationship:\n1. Text 1 explicitly states that the murderer escaped through the window and that the murderer is McGee.\n2. Text 1 also mentions that the cop suspects and is investigating the crime.\n3. While Text 1 doesn't directly state that the cop suspects McGee escaped through the window, it provides all the necessary information to support this conclusion.\n\nGiven this analysis, the relationship between Text 1 and Text 2 can be categorized as:\n\nTrue\n\nExplanation: Although Text 1 doesn't explicitly state that the cop suspects McGee escaped through the window, it provides all the necessary information to support this conclusion. The premise states that the murderer (who is identified as McGee) escaped through the window, and that the cop suspects and is investigating the crime. It's a logical inference that the cop would suspect McGee of escaping through the window, making the hypothesis in Text 2 true based on the information given in Text 1."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "believe",
+        "premise": "John believes that his son is missing since the early morning. Isaac Is John's son.",
+        "false_hypothesis": "John believes that Isaac is missing since the early morning.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 (Premise):\n- John believes that his son is missing since the early morning.\n- Isaac is John's son.\n\nText 2 (Hypothesis):\nJohn believes that Isaac is missing since the early morning.\n\nAnalysis:\n1. Text 1 states that John believes his son is missing.\n2. Text 1 also establishes that Isaac is John's son.\n3. Text 2 directly states that John believes Isaac is missing.\n\nGiven this information, we can conclude that Text 2 is a logical consequence of the information provided in Text 1. Since Isaac is John's son, and John believes his son is missing, it follows that John believes Isaac is missing.\n\nTherefore, the correct answer is:\n\nTrue: Text 2 is True given Text 1.\n\nThe hypothesis in Text 2 is directly supported by and can be inferred from the information provided in the premise (Text 1)."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "believe",
+        "premise": "John believes that his son is missing since the early morning. Isaac Is John's son. Isaac is with his father since the early morning.",
+        "false_hypothesis": "John believes that Isaac is missing since the early morning.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son. Isaac is with his father since the early morning.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son. Isaac is with his father since the early morning.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John believes that his son is missing since the early morning. Isaac Is John's son. Isaac is with his father since the early morning.\nText 2 (Hypothesis): John believes that Isaac is missing since the early morning.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (Premise) and Text 2 (Hypothesis), let's analyze the information provided in both texts:\n\nText 1 (Premise):\n1. John believes that his son is missing since the early morning.\n2. Isaac is John's son.\n3. Isaac is with his father since the early morning.\n\nText 2 (Hypothesis):\nJohn believes that Isaac is missing since the early morning.\n\nAnalysis:\n1. Text 1 states that John believes his son is missing.\n2. Text 1 also confirms that Isaac is John's son.\n3. Text 2 directly states that John believes Isaac (his son) is missing.\n4. However, Text 1 also mentions that Isaac is actually with his father since the early morning.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is: True\n\nExplanation:\nAlthough Text 1 provides additional information that Isaac is actually with his father, this doesn't change the fact that John believes his son is missing. The hypothesis in Text 2 is specifically about John's belief, not the actual situation. Since Text 1 clearly states that John believes his son is missing, and we know Isaac is his son, it directly supports the hypothesis in Text 2 that John believes Isaac is missing."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "believe",
+        "premise": "John Believes that a spy took his belongings. The spy's name is Jerry.",
+        "false_hypothesis": "John believes that Jerry took his stuff.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John Believes that a spy took his belongings. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John Believes that a spy took his belongings. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John Believes that a spy took his belongings. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "False",
+            "model_reply": "To analyze the relationship between Text 1 (premise) and Text 2 (hypothesis), let's break down the information provided in each:\n\nText 1 (Premise):\n- John believes that a spy took his belongings.\n- The spy's name is Jerry.\n\nText 2 (Hypothesis):\n- John believes that Jerry took his stuff.\n\nComparing these, we can see that:\n1. Text 1 states that John believes a spy took his belongings.\n2. Text 1 also identifies the spy as Jerry.\n3. Text 2 directly states that John believes Jerry took his stuff.\n\nThe information in Text 2 is a logical conclusion drawn from the information provided in Text 1. Text 1 establishes that John believes a spy took his belongings and that the spy is named Jerry. Text 2 combines these two pieces of information into a single statement that accurately reflects John's belief as presented in Text 1.\n\nTherefore, the relationship between Text 1 and Text 2 is:\n\nTrue: Text 2 is True given Text 1.\n\nThe hypothesis (Text 2) is a correct interpretation of the information provided in the premise (Text 1)."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "believe",
+        "premise": "John Believes that a spy took his belongings. John didn't see the spy. The spy's name is Jerry.",
+        "false_hypothesis": "John believes that Jerry took his stuff.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John Believes that a spy took his belongings. John didn't see the spy. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John Believes that a spy took his belongings. John didn't see the spy. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John Believes that a spy took his belongings. John didn't see the spy. The spy's name is Jerry.\nText 2 (Hypothesis): John believes that Jerry took his stuff.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in both texts:\n\nText 1 (Premise):\n- John believes a spy took his belongings.\n- John didn't see the spy.\n- The spy's name is Jerry.\n\nText 2 (Hypothesis):\n- John believes that Jerry took his stuff.\n\nAnalysis:\n1. Text 1 states that John believes a spy took his belongings, but it doesn't mention that John knows the spy's name.\n2. Text 1 explicitly states that John didn't see the spy.\n3. The information about the spy's name (Jerry) is provided as a fact in Text 1, but there's no indication that John knows this information.\n\nConclusion:\nThe correct answer is False.\n\nExplanation:\nText 2 claims that John believes Jerry took his stuff, which implies that John knows the spy's name. However, Text 1 doesn't provide any information suggesting that John knows the spy's identity. In fact, it states that John didn't see the spy. While we, as readers, know that the spy's name is Jerry, there's no evidence that John has this information. Therefore, Text 1 contradicts the claim made in Text 2, making the relationship between the texts False."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "discover",
+        "premise": "John discovered that his gun was stolen from his shed. Bruce took it.",
+        "false_hypothesis": "John discovered that Bruce stole his gun.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided in both:\n\nText 1 (Premise): \n- John discovered that his gun was stolen from his shed.\n- Bruce took it.\n\nText 2 (Hypothesis):\n- John discovered that Bruce stole his gun.\n\nComparing these two statements:\n\n1. Both texts mention that John's gun was stolen.\n2. Text 1 states that Bruce took the gun.\n3. Text 2 directly claims that John discovered Bruce stole the gun.\n\nBased on this analysis, we can conclude that Text 2 is True given Text 1. The premise provides all the information necessary to support the hypothesis. John discovered his gun was stolen, and we're told that Bruce took it. This directly supports the hypothesis that John discovered Bruce stole his gun.\n\nTherefore, the answer is: True"
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "discover",
+        "premise": "John discovered that his gun was stolen from his shed. Bruce took it. John doesn't know who took it.",
+        "false_hypothesis": "John discovered that Bruce stole his gun.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it. John doesn't know who took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it. John doesn't know who took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John discovered that his gun was stolen from his shed. Bruce took it. John doesn't know who took it.\nText 2 (Hypothesis): John discovered that Bruce stole his gun.",
+            "answer": "False",
+            "model_reply": "Let's analyze the relationship between Text 1 (Premise) and Text 2 (Hypothesis):\n\nText 1 states:\n1. John's gun was stolen from his shed.\n2. Bruce took the gun.\n3. John doesn't know who took it.\n\nText 2 claims:\nJohn discovered that Bruce stole his gun.\n\nComparing these:\n1. Both texts agree that John's gun was stolen.\n2. Text 1 confirms that Bruce took the gun.\n3. However, Text 1 explicitly states that John doesn't know who took the gun.\n\nThe key point here is that while Bruce did indeed steal the gun, John is unaware of this fact. Text 2 contradicts this by stating that John discovered Bruce was the thief.\n\nTherefore, the relationship between Text 1 and Text 2 is:\n\nFalse\n\nText 1 contradicts Text 2 because it explicitly states that John doesn't know who took the gun, while Text 2 claims that John discovered Bruce stole it."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "discover",
+        "premise": "John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.",
+        "false_hypothesis": "John discovered Noam Ke.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), I'll analyze the information provided in both statements.\n\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke.\n\nText 2 (Hypothesis): John discovered Noam Ke.\n\nAnalysis:\n- Text 1 states that John discovered a hidden cave.\n- Text 1 also specifies that this cave is known as Noam Ke.\n- Text 2 directly states that John discovered Noam Ke.\n\nGiven this analysis, we can conclude that the information in Text 2 is directly supported by the information provided in Text 1. John did indeed discover Noam Ke, as it is the name of the hidden cave he found while hiking.\n\nTherefore, the correct answer is:\n\nTrue: Text 2 is True given Text 1.\n\nThe hypothesis (Text 2) is a accurate simplification of the information provided in the premise (Text 1), and is thus considered true based on the given information."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "discover",
+        "premise": "John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke. John did not know it is familiar.",
+        "false_hypothesis": "John discovered Noam Ke.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke. John did not know it is familiar.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke. John did not know it is familiar.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John discovered a hidden cave while hiking in the mountains. The Cave is known as Noam Ke. John did not know it is familiar.\nText 2 (Hypothesis): John discovered Noam Ke.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided:\n\nText 1 states:\n1. John discovered a hidden cave while hiking in the mountains.\n2. The cave is known as Noam Ke.\n3. John did not know it is familiar (meaning he didn't know it was already known).\n\nText 2 states:\nJohn discovered Noam Ke.\n\nComparing these, we can conclude:\n\nThe answer is True.\n\nExplanation:\nAlthough John didn't know that the cave was already known or named, he did indeed discover the cave called Noam Ke during his hike. The fact that he was unaware of its existing name or familiarity doesn't change the fact that he discovered it from his perspective. The premise explicitly states that John discovered the hidden cave and that this cave is known as Noam Ke, which directly supports the hypothesis."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "assert",
+        "premise": "John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi.",
+        "false_hypothesis": "John asserts that the queen of Bokolulu lives in tootoosi.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in each:\n\nText 1 (Premise):\n1. John asserts that the queen of Bokolulu lives in de-chrashp.\n2. de-chrashp is in tootoosi.\n\nText 2 (Hypothesis):\nJohn asserts that the queen of Bokolulu lives in tootoosi.\n\nAnalysis:\nFrom Text 1, we can infer that if the queen of Bokolulu lives in de-chrashp, and de-chrashp is in tootoosi, then the queen of Bokolulu lives in tootoosi. This is because if something is located in a place that is within another place, it is also located in that larger place.\n\nHowever, there's a subtle but important difference between Text 1 and Text 2. Text 1 states what John specifically asserted, while Text 2 makes a claim about what John asserted that is not directly stated in Text 1.\n\nWhile we can logically conclude that the queen lives in tootoosi based on the information given, we cannot be certain that John specifically asserted this. John only asserted that the queen lives in de-chrashp, not in tootoosi directly.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is Neutral. While the information in Text 1 logically implies what is stated in Text 2, we cannot be certain that John specifically made the assertion mentioned in Text 2. Text 1 neither directly supports nor contradicts Text 2."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "assert",
+        "premise": "John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi. John does not know tootoosi.",
+        "false_hypothesis": "John asserts that the queen of Bokolulu lives in tootoosi.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi. John does not know tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi. John does not know tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John asserts that the queen of Bokolulu lives in de-chrashp.  de-chrashp is in tootoosi. John does not know tootoosi.\nText 2 (Hypothesis): John asserts that the queen of Bokolulu lives in tootoosi.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in each:\n\nText 1 (Premise):\n- John asserts that the queen of Bokolulu lives in de-chrashp.\n- de-chrashp is in tootoosi.\n- John does not know tootoosi.\n\nText 2 (Hypothesis):\n- John asserts that the queen of Bokolulu lives in tootoosi.\n\nComparing these statements:\n\n1. In Text 1, John asserts that the queen lives in de-chrashp, not in tootoosi directly.\n2. While it's true that de-chrashp is in tootoosi, John doesn't know this information according to Text 1.\n3. Text 2 states that John asserts the queen lives in tootoosi, which is not what Text 1 says John asserted.\n\nGiven this analysis, we can conclude that Text 2 is not supported by the information in Text 1. In fact, Text 1 contradicts Text 2 because it explicitly states that John asserts something different and doesn't know about tootoosi.\n\nTherefore, the answer is: False\n\nText 1 contradicts Text 2 because John's assertion in Text 1 is different from what is claimed in Text 2, and Text 1 explicitly states that John doesn't know about tootoosi."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "assert",
+        "premise": "John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate.",
+        "false_hypothesis": "John asserts that Marie started working for QANO corperate.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided:\n\nText 1 states:\n1. John asserts that Marie started working for Fiona company.\n2. Fiona company is a part of QANO corporate.\n\nText 2 states:\nJohn asserts that Marie started working for QANO corporate.\n\nAnalysis:\nWhile Text 1 says Marie works for Fiona company, which is a part of QANO corporate, Text 2 directly states that Marie works for QANO corporate. This is a case where the specific (Fiona company) is part of the larger entity (QANO corporate).\n\nIn most corporate structures, when someone works for a subsidiary (Fiona company), they are generally considered to be working for the parent company (QANO corporate) as well. However, the premise doesn't explicitly state that John asserted Marie works for QANO corporate, only for Fiona company.\n\nGiven this information, we can't definitively say that Text 2 is true based on Text 1, but we also can't say it's false. The information in Text 1 suggests that Text 2 could be true, but it doesn't provide enough certainty to confirm it.\n\nTherefore, the most appropriate answer is:\n\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\n\nWhile there is a relationship between the companies mentioned, the specific assertion made by John in Text 2 is not directly supported or contradicted by the information in Text 1."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "assert",
+        "premise": "John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.",
+        "false_hypothesis": "John asserts that Marie started working for QANO corperate.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John asserts that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John asserts that Marie started working for QANO corperate.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided:\n\nText 1 states:\n1. John asserts that Marie started working for Fiona company.\n2. Fiona company is a part of QANO corporate.\n3. John never heard of QANO corporate.\n\nText 2 claims:\nJohn asserts that Marie started working for QANO corporate.\n\nAnalyzing the relationship:\n1. John only asserts that Marie started working for Fiona company, not QANO corporate directly.\n2. Although Fiona company is part of QANO corporate, John is not aware of this connection as he has never heard of QANO corporate.\n3. Given John's lack of knowledge about QANO corporate, he cannot assert that Marie started working for QANO corporate.\n\nBased on this analysis, the correct answer is:\n\nFalse: Text 1 contradicts Text 2.\n\nThe premise (Text 1) clearly states that John is unaware of QANO corporate, so he cannot assert that Marie started working for QANO corporate as claimed in the hypothesis (Text 2). This contradiction makes the hypothesis false given the information in the premise."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "claim",
+        "premise": "John claims that the queen of Bokolulu lives in de-chrashp. de-chrashp is in tootoosi county.",
+        "false_hypothesis": "John claims that the queen of Bokolulu lives in tootoosi.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. de-chrashp is in tootoosi county.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. de-chrashp is in tootoosi county.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. de-chrashp is in tootoosi county.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given in both texts:\n\nText 1 (Premise):\n- John claims that the queen of Bokolulu lives in de-chrashp.\n- de-chrashp is in tootoosi county.\n\nText 2 (Hypothesis):\n- John claims that the queen of Bokolulu lives in tootoosi.\n\nAnalysis:\n1. Text 1 states that the queen lives in de-chrashp, which is a specific location.\n2. Text 1 also mentions that de-chrashp is in tootoosi county.\n3. Text 2 states that the queen lives in tootoosi, which is less specific than de-chrashp.\n\nConclusion:\nThe relationship between Text 1 and Text 2 is False.\n\nExplanation:\nWhile it's true that de-chrashp is in tootoosi county, John's claim in Text 1 is specifically about the queen living in de-chrashp, not in tootoosi as a whole. Text 2 generalizes the location to tootoosi, which is not an accurate representation of John's claim in Text 1. This generalization changes the meaning of John's claim, making Text 2 false in relation to Text 1."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "claim",
+        "premise": "John claims that the queen of Bokolulu lives in de-chrashp. John does not know the county of de-chrashp.",
+        "false_hypothesis": "John claims that the queen of Bokolulu lives in tootoosi.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. John does not know the county of de-chrashp.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. John does not know the county of de-chrashp.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John claims that the queen of Bokolulu lives in de-chrashp. John does not know the county of de-chrashp.\nText 2 (Hypothesis): John claims that the queen of Bokolulu lives in tootoosi.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information provided in both texts:\n\nText 1 (Premise):\n- John claims that the queen of Bokolulu lives in de-chrashp.\n- John does not know the county of de-chrashp.\n\nText 2 (Hypothesis):\n- John claims that the queen of Bokolulu lives in tootoosi.\n\nComparing these two texts, we can see that:\n\n1. In Text 1, John claims the queen lives in de-chrashp.\n2. In Text 2, John claims the queen lives in tootoosi.\n\nThese two statements are contradictory. John cannot claim that the queen lives in two different places at the same time (de-chrashp and tootoosi).\n\nTherefore, the relationship between Text 1 and Text 2 is:\n\nFalse: Text 1 contradicts Text 2.\n\nThe premise (Text 1) directly contradicts the hypothesis (Text 2) by stating that John claims the queen lives in a different place than what is mentioned in Text 2."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "claim",
+        "premise": "John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate.",
+        "false_hypothesis": "John claims that Marie started working for QANO corperate.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided:\n\nText 1 states:\n1. John claims Marie started working for Fiona company.\n2. Fiona company is a part of QANO corporate.\n\nText 2 states:\nJohn claims Marie started working for QANO corporate.\n\nAnalysis:\nWhile Text 1 doesn't directly state that Marie is working for QANO corporate, it does provide information that leads to this conclusion. Since Fiona company is part of QANO corporate, and Marie is said to be working for Fiona company, it can be inferred that Marie is, by extension, working for QANO corporate.\n\nHowever, there's a subtle difference between the two statements. Text 1 specifies that Marie is working for Fiona company (a subsidiary), while Text 2 generalizes this to QANO corporate (the parent company). While technically correct, Text 2 is less specific than the information provided in Text 1.\n\nConclusion:\nGiven the information in Text 1, Text 2 can be considered True. Although Text 2 is less specific, it is not incorrect based on the information provided in Text 1. Therefore, the relationship between Text 1 and Text 2 is:\n\nTrue: Text 2 is True given Text 1."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "claim",
+        "premise": "John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.",
+        "false_hypothesis": "John claims that Marie started working for QANO corperate.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "contradiction",
+            "model_reply": "Contradiction"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "no",
+            "model_reply": "No"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): John claims that Marie started working for Fiona company. Fiona company is a part of QANO corperate. John never heard of QANO corperate.\nText 2 (Hypothesis): John claims that Marie started working for QANO corperate.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given:\n\nText 1 tells us:\n1. John claims Marie started working for Fiona company.\n2. Fiona company is part of QANO corporate.\n3. John never heard of QANO corporate.\n\nText 2 states:\nJohn claims that Marie started working for QANO corporate.\n\nAnalyzing this information:\n1. John is aware of Marie working for Fiona company, but not that Fiona is part of QANO corporate.\n2. John has never heard of QANO corporate.\n3. Therefore, John cannot claim that Marie started working for QANO corporate, as he is unaware of its existence or its relationship to Fiona company.\n\nBased on this analysis, the correct answer is:\n\nFalse: Text 1 contradicts Text 2.\n\nThe premise (Text 1) clearly states that John never heard of QANO corporate, which directly contradicts the hypothesis (Text 2) that suggests John claims Marie started working for QANO corporate. John cannot make a claim about a company he has never heard of."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president.",
+        "false_hypothesis": "Jamie Is looking for the President.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "False",
+            "model_reply": "Let's analyze the relationship between Text 1 (premise) and Text 2 (hypothesis):\n\nText 1 states two things:\n1. Jamie is looking for the secretary of defense.\n2. The secretary of defense is the president.\n\nText 2 states:\nJamie is looking for the President.\n\nGiven the information in Text 1, we can conclude that Jamie is indeed looking for the President, because:\na) Jamie is looking for the secretary of defense, and\nb) The secretary of defense is the president.\n\nTherefore, the statement in Text 2 is a logical conclusion from the information provided in Text 1.\n\nThe correct answer is: True\n\nText 2 is True given Text 1, as the information in Text 1 directly supports and leads to the conclusion stated in Text 2."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president. Jamie does not know that the president is filling both roles.",
+        "false_hypothesis": "Jamie Is looking for the President.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is looking for the secretary of defence with breaking news. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie Is looking for the President.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given:\n\nText 1 (Premise) tells us:\n1. Jamie is looking for the secretary of defence.\n2. The secretary of defence is also the president.\n3. Jamie doesn't know that the president is filling both roles.\n\nText 2 (Hypothesis) states:\nJamie is looking for the President.\n\nNow, let's consider the options:\n\n1. True: This would mean that Text 2 is correct based on the information in Text 1.\n2. Neutral: This would mean that Text 1 and Text 2 are unrelated.\n3. False: This would mean that Text 1 contradicts Text 2.\n\nAnalysis:\nWhile it's true that the secretary of defence is also the president, Jamie is explicitly looking for the secretary of defence and doesn't know about the dual role. Jamie's intention is to find the secretary of defence, not the president.\n\nTherefore, the correct answer is: False\n\nText 1 contradicts Text 2 because Jamie is specifically looking for the secretary of defence, not knowing that this person is also the president. The hypothesis that Jamie is looking for the President is not accurate based on the information given in the premise."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for his mom. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. ",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is looking for his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is looking for his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is looking for his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), I'll analyze the information provided in both texts.\n\nText 1 (Premise) states:\n- Jamie is looking for his mom.\n- His mom is Julia Raskin.\n\nText 2 (Hypothesis) states:\n- Jamie is looking for Julia Raskin.\n\nAnalysis:\nThe premise clearly states that Jamie is looking for his mom, and it also explicitly identifies his mom as Julia Raskin. The hypothesis directly states that Jamie is looking for Julia Raskin.\n\nGiven this information, we can conclude that the hypothesis (Text 2) is a logical and true statement based on the information provided in the premise (Text 1).\n\nTherefore, the answer is: True\n\nText 2 is True given Text 1, as the hypothesis is directly supported by and can be logically deduced from the information provided in the premise."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "looking for",
+        "premise": "Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. ",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given:\n\nText 1 (Premise): Jamie is looking for his mom, who he never knew her name. His mom is Julia Raskin.\nText 2 (Hypothesis): Jamie is looking for Julia Raskin.\n\nBased on this information:\n\n1. Text 1 states that Jamie is looking for his mom.\n2. Text 1 also states that Jamie never knew his mom's name.\n3. Text 1 reveals that Jamie's mom is Julia Raskin.\n4. Text 2 states that Jamie is looking for Julia Raskin.\n\nConsidering these points, we can conclude that Text 2 is True given Text 1. Even though Jamie doesn't know his mom's name, he is indeed looking for Julia Raskin, as she is his mom.\n\nTherefore, the correct answer is: True\n\nThe hypothesis (Text 2) is supported by the information provided in the premise (Text 1), even though Jamie himself doesn't know the name of the person he's looking for."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "wish for",
+        "premise": "Jamie wishes to meet the secretary of defence. The secretary of defence is the president.",
+        "false_hypothesis": "Jamie wishes to meet the president.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "False",
+            "model_reply": "To answer this question, let's analyze the relationship between Text 1 (the premise) and Text 2 (the hypothesis):\n\nText 1 provides two pieces of information:\n1. Jamie wishes to meet the secretary of defence.\n2. The secretary of defence is the president.\n\nText 2 states:\nJamie wishes to meet the president.\n\nGiven the information in Text 1, we can conclude that Text 2 is logically true. Here's why:\n\n1. Jamie wants to meet the secretary of defence (from Text 1).\n2. The secretary of defence is the president (also from Text 1).\n3. Therefore, by wanting to meet the secretary of defence, Jamie inherently wants to meet the president, as they are the same person.\n\nThe hypothesis in Text 2 directly follows from the information provided in Text 1, without any contradictions or additional assumptions.\n\nTherefore, the correct answer is: True\n\nText 2 is True given Text 1."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "wish for",
+        "premise": "Jamie wishes to meet the secretary of defence. The secretary of defence is the president. Jamie does not know that the president is filling both roles.",
+        "false_hypothesis": "Jamie wishes to meet the president.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "contradiction",
+            "model_reply": "Neutral"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie wishes to meet the secretary of defence. The secretary of defence is the president. Jamie does not know that the president is filling both roles.\nText 2 (Hypothesis): Jamie wishes to meet the president.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 and Text 2, let's analyze the information given:\n\nText 1 (Premise) tells us:\n1. Jamie wishes to meet the secretary of defence.\n2. The secretary of defence is also the president.\n3. Jamie doesn't know that the president is filling both roles.\n\nText 2 (Hypothesis) states:\nJamie wishes to meet the president.\n\nAnalysis:\nWhile it's true that the secretary of defence is the president, Jamie is explicitly unaware of this fact. Jamie's wish is specifically to meet the secretary of defence, not knowing that this person is also the president.\n\nGiven this information, we can conclude that Text 2 is not necessarily true based on Text 1. Jamie's desire to meet the secretary of defence does not equate to a desire to meet the president, especially since Jamie is unaware that they are the same person.\n\nHowever, Text 2 is not explicitly contradicted by Text 1 either. It's possible that Jamie might wish to meet the president separately, but this information is not provided in the premise.\n\nTherefore, the relationship between Text 1 and Text 2 is best described as:\n\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\n\nThe premise doesn't provide enough information to confirm or deny Jamie's wish to meet the president specifically, making the hypothesis neither true nor false based on the given information."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "wish for",
+        "premise": "Jamie is wishing to meet his mom. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. ",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is wishing to meet his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is wishing to meet his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is wishing to meet his mom. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided in both texts:\n\nText 1 (Premise): Jamie is wishing to meet his mom. His mom is Julia Raskin.\nText 2 (Hypothesis): Jamie is looking for Julia Raskin.\n\nAnalysis:\n1. Text 1 states that Jamie wishes to meet his mom.\n2. Text 1 also identifies Jamie's mom as Julia Raskin.\n3. Text 2 states that Jamie is looking for Julia Raskin.\n\nConclusion:\nThe relationship between these two texts is True.\n\nExplanation:\nThe premise (Text 1) establishes that Jamie wants to meet his mom and identifies her as Julia Raskin. The hypothesis (Text 2) states that Jamie is looking for Julia Raskin. While the exact wording is different (\"wishing to meet\" vs. \"looking for\"), the core meaning is essentially the same. If Jamie wishes to meet his mom, it's reasonable to conclude that he would be looking for her. Therefore, Text 2 can be considered true based on the information provided in Text 1."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "wish for",
+        "premise": "Jamie is wishing to meet his mom, whose name he never knew. His mom is Julia Raskin. ",
+        "false_hypothesis": "Jamie is looking for Julia Raskin. ",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): Jamie is wishing to meet his mom, whose name he never knew. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): Jamie is wishing to meet his mom, whose name he never knew. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): Jamie is wishing to meet his mom, whose name he never knew. His mom is Julia Raskin. \nText 2 (Hypothesis): Jamie is looking for Julia Raskin. ",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given in both texts:\n\nText 1 (Premise): \n- Jamie wants to meet his mom.\n- Jamie doesn't know his mom's name.\n- His mom's name is Julia Raskin.\n\nText 2 (Hypothesis):\n- Jamie is looking for Julia Raskin.\n\nAnalyzing the relationship:\n1. Text 1 states that Jamie wants to meet his mom, which implies he is looking for her.\n2. Text 1 also reveals that Jamie's mom is Julia Raskin.\n3. However, Text 1 explicitly states that Jamie doesn't know his mom's name.\n\nGiven this analysis, we can conclude that the answer is:\n\nFalse\n\nExplanation: While it's true that Jamie is looking for his mom, and his mom is indeed Julia Raskin, Text 1 clearly states that Jamie doesn't know his mom's name. Therefore, it's not accurate to say that Jamie is specifically looking for Julia Raskin, as he doesn't know this name. The hypothesis in Text 2 contradicts the information provided in Text 1 about Jamie not knowing his mom's name."
+        }
+    },
+    {
+        "type": "basic",
+        "central_verb": "resigns",
+        "premise": "The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position.",
+        "false_hypothesis": "The chairwoman of the Entertainment Committee has resigned from the position.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (Premise) and Text 2 (Hypothesis), let's analyze the information given:\n\nText 1 tells us two things:\n1. The treasurer of the charity organization is also the chairwoman of the Entertainment Committee.\n2. The treasurer of the charity organization resigned from the position.\n\nText 2 states:\nThe chairwoman of the Entertainment Committee has resigned from the position.\n\nGiven this information, we can conclude that the answer is:\n\nTrue\n\nExplanation:\nSince the treasurer of the charity organization and the chairwoman of the Entertainment Committee are the same person, and we're told that this person resigned from the treasurer position, it logically follows that they also resigned from the chairwoman position. The resignation from one role implies resignation from both roles, as they are held by the same individual.\n\nTherefore, Text 2 is a true statement based on the information provided in Text 1."
+        }
+    },
+    {
+        "type": "basic_with_epistemic_state",
+        "central_verb": "resigns",
+        "premise": "The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position of treasurer.",
+        "false_hypothesis": "The chairwoman of the Entertainment Committee has resigned from the position.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position of treasurer.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position of treasurer.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The treasurer of the charity organization is the chairwoman of the Entertainment Committee. The treasurer of the charity organization resigned from the position of treasurer.\nText 2 (Hypothesis): The chairwoman of the Entertainment Committee has resigned from the position.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information provided:\n\nText 1 tells us:\n1. The treasurer of the charity organization is also the chairwoman of the Entertainment Committee.\n2. The treasurer of the charity organization resigned from the position of treasurer.\n\nText 2 states:\nThe chairwoman of the Entertainment Committee has resigned from the position.\n\nAnalysis:\n- We know that the same person holds both positions: treasurer and chairwoman of the Entertainment Committee.\n- Text 1 specifically states that this person resigned from the position of treasurer.\n- However, Text 1 does not mention anything about resigning from the position of chairwoman of the Entertainment Committee.\n\nConclusion:\nThe correct answer is Neutral.\n\nExplanation:\nWhile it's true that the person who resigned as treasurer is also the chairwoman of the Entertainment Committee, we cannot conclude that they have also resigned from the chairwoman position. Text 1 only mentions resignation from the treasurer position, not from the Entertainment Committee chairwoman position. There's not enough information to determine whether the person has resigned from both positions or only from the treasurer position. Therefore, Text 2 is neither confirmed nor contradicted by Text 1, making the relationship between the two texts Neutral."
+        }
+    },
+    {
+        "type": "mentioning_words",
+        "central_verb": "resigns",
+        "premise": "The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job.",
+        "false_hypothesis": "The head of the technologies department quit her job.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given:\n\nText 1 tells us two things:\n1. The head of the technologies department is also the Chief Product Officer.\n2. The Chief Product Officer quit her job.\n\nText 2 states:\nThe head of the technologies department quit her job.\n\nGiven the information in Text 1, we can conclude that since the head of the technologies department and the Chief Product Officer are the same person, and the Chief Product Officer quit her job, it logically follows that the head of the technologies department also quit her job.\n\nTherefore, the answer is: True\n\nText 2 is True given Text 1 because the information in Text 1 directly supports and confirms the statement in Text 2."
+        }
+    },
+    {
+        "type": "mentioning_words_and_epistemic_state",
+        "central_verb": "resigns",
+        "premise": "The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job as Chief Product Officer.",
+        "false_hypothesis": "The head of the technologies department quit her job.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job as Chief Product Officer.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job as Chief Product Officer.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "no",
+            "model_reply": "Yes"
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): The head of the technologies department also serves as the Chief Product Officer. The Chief Product Officer quit her job as Chief Product Officer.\nText 2 (Hypothesis): The head of the technologies department quit her job.",
+            "answer": "False",
+            "model_reply": "To determine the relationship between Text 1 (premise) and Text 2 (hypothesis), let's analyze the information given:\n\nText 1 provides two pieces of information:\n1. The head of the technologies department also serves as the Chief Product Officer.\n2. The Chief Product Officer quit her job as Chief Product Officer.\n\nText 2 states:\nThe head of the technologies department quit her job.\n\nGiven this information, we can conclude that Text 2 is True based on Text 1. Here's why:\n\n1. Text 1 establishes that the head of the technologies department and the Chief Product Officer are the same person.\n2. Text 1 then states that this person quit her job as Chief Product Officer.\n3. Since the two positions are held by the same person, quitting one position effectively means quitting both.\n\nTherefore, when the Chief Product Officer quit her job, she also quit as the head of the technologies department, which makes Text 2 true based on the information provided in Text 1.\n\nThe answer is: True"
+        }
+    }
+]
