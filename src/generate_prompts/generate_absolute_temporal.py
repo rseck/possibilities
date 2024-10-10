@@ -20,10 +20,10 @@ def generate_data():
 
 
 def generate_prompts_from_tr_data():
-    with open('../prompts_templates/reasoning_prompt_templates.json', 'r') as f:
+    with open('../resources/prompts_templates/reasoning_prompt_templates.json', 'r') as f:
         prompt_templates = json.load(f)
 
-    with open('../data/absolute_temporal_data.json', 'r') as f:
+    with open('../resources/data/absolute_temporal_data.json', 'r') as f:
         ta_data = json.load(f)
 
     prompts_descriptions = prompt_templates.keys()
@@ -43,7 +43,7 @@ def generate_prompts_from_tr_data():
                     raise ValueError()
             item[prompt_description] = {"prompt": prompt, "answer": answer}
         ta_prompts.append(item)
-    with open('../generated_prompts/14_prompts_absolute_temporal_3_types.json', 'w') as f:
+    with open('../resources/generated_prompts/14_prompts_absolute_temporal_3_types.json', 'w') as f:
         json.dump(ta_prompts, f, indent=4)  #
 
 

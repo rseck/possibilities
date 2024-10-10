@@ -28,16 +28,16 @@ def generate_data():
         data_point['possible_answers_explanations'] = row.get('possible answers explanations')
         relation_data.append(data_point)
 
-    with open('../data/relation_determine_data.json', 'w') as f:
+    with open('../resources/data/relation_determine_data.json', 'w') as f:
         json.dump(relation_data, f, indent=4)  #
 
 
 def generate_prompts_from_relation_data():
     pass
-    with open('../prompts_templates/relations_determining.json', 'r') as f:
+    with open('../resources/prompts_templates/relations_determining.json', 'r') as f:
         prompt_templates = json.load(f)
 
-    with open('../data/relation_determine_data.json', 'r') as f:
+    with open('../resources/data/relation_determine_data.json', 'r') as f:
         relation_data = json.load(f)
 
     prompts_descriptions = prompt_templates.keys()
@@ -56,7 +56,7 @@ def generate_prompts_from_relation_data():
                     work_item[prompt_description] = {"prompt": prompt, "answer": expanded_correct_answer,
                                                      "possible_answers_given": possible_answers}
                     relation_prompts.append(work_item.copy())
-    with open('../generated_prompts/102_prompts_relation_determine_1_type.json', 'w') as f:
+    with open('../resources/generated_prompts/102_prompts_relation_determine_1_type.json', 'w') as f:
         json.dump(relation_prompts, f, indent=4)  #
 
 

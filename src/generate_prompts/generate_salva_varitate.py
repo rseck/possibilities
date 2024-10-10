@@ -40,15 +40,15 @@ def generate_data():
         data_point_4['false_hypothesis'] = row.get('tex2.2 - with falsely made salva varitate')
         sv_data.append(data_point_4)
 
-    with open('../data/salva_varitate_data.json', 'w') as f:
+    with open('../resources/data/salva_varitate_data.json', 'w') as f:
         json.dump(sv_data, f, indent=4)  #
 
 
 def generate_prompts_from_sv_data():
-    with open('../prompts_templates/reasoning_prompt_templates.json', 'r') as f:
+    with open('../resources/prompts_templates/reasoning_prompt_templates.json', 'r') as f:
         prompt_templates = json.load(f)
 
-    with open('../data/salva_varitate_data.json', 'r') as f:
+    with open('../resources/data/salva_varitate_data.json', 'r') as f:
         sv_data = json.load(f)
 
     prompts_descriptions = prompt_templates.keys()
@@ -70,7 +70,7 @@ def generate_prompts_from_sv_data():
             item[prompt_description] = {"prompt": prompt, "answer": answer}
         sv_prompts.append(item)
 
-    with open('../generated_prompts/44_prompts_salva_varitate_3_types.json', 'w') as f:
+    with open('../resources/generated_prompts/44_prompts_salva_varitate_3_types.json', 'w') as f:
         json.dump(sv_prompts, f, indent=4)  #
 
 
