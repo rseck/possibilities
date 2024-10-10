@@ -31,7 +31,7 @@ def main():
             item[prompt_description] = {"prompt": other_possibilities_prompt, "base_answer": base_answer}
         results.append(item)
 
-    with open('generated_prompts/20_prompt_other_possibilities_expanded_3_types.json', 'w') as f:
+    with open('../generated_prompts/20_prompt_other_possibilities_expanded_3_types.json', 'w') as f:
         json.dump(results, f, indent=4)  #
 
 

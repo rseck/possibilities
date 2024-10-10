@@ -20,15 +20,15 @@ def generate_data():
                 data_point['false_hypothesis'] = row.get(hypothesis_type)
                 tr_data.append(data_point)
 
-    with open('resources/relative_temporal_data.json', 'w') as f:
+    with open('../data/relative_temporal_data.json', 'w') as f:
         json.dump(tr_data, f, indent=4)
 
 
 def generate_prompts_from_tr_data():
-    with open('prompts_templates/reasoning_prompt_templates.json', 'r') as f:
+    with open('../prompts_templates/reasoning_prompt_templates.json', 'r') as f:
         prompt_templates = json.load(f)
 
-    with open('resources/relative_temporal_data.json', 'r') as f:
+    with open('../data/relative_temporal_data.json', 'r') as f:
         tr_data = json.load(f)
 
     prompts_descriptions = prompt_templates.keys()
@@ -48,7 +48,7 @@ def generate_prompts_from_tr_data():
                     raise ValueError()
             item[prompt_description] = {"prompt": prompt, "answer": answer}
         tr_prompts.append(item)
-    with open('generated_prompts/30_prompts_relative_temporal_3_types.json', 'w') as f:
+    with open('../generated_prompts/30_prompts_relative_temporal_3_types.json', 'w') as f:
         json.dump(tr_prompts, f, indent=4)  #
 
 

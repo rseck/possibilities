@@ -1,6 +1,6 @@
 import json
 def main():
-    with open('generated_prompts/44_prompts_salva_varitate_3_types.json', 'r') as f:
+    with open('../resources/generated_prompts/44_prompts_salva_varitate_3_types.json', 'r') as f:
         prompts = json.load(f)
 
     prompt_types = ['entailment_with_neutral', 'true_false_neutral', 'entailment']
