@@ -19,8 +19,8 @@ def generate_data():
     df = pd.read_excel(file_name, sheet_name='possible relations')
     for index, row in df.iterrows():
         premise_hypothesis = row.get('premise/hypothesis')
-        premise = premise_hypothesis.replace("{var}", "{var_1}")
-        hypothesis = premise_hypothesis.replace("{var}", "{var_2}")
+        premise = premise_hypothesis.replace("[var]", "[var_1]")
+        hypothesis = premise_hypothesis.replace("[var]", "[var_2]")
         data_point = relations_data_point_template.copy()
         data_point['premise'] = premise
         data_point['hypothesis'] = hypothesis
@@ -33,7 +33,6 @@ def generate_data():
 
 
 def generate_prompts_from_relation_data():
-    pass
     with open('../resources/prompts_templates/relations_determining.json', 'r') as f:
         prompt_templates = json.load(f)
 
@@ -61,5 +60,5 @@ def generate_prompts_from_relation_data():
 
 
 if __name__ == '__main__':
-    # generate_data()
+    generate_data()
     generate_prompts_from_relation_data()
