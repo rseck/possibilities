@@ -1,0 +1,268 @@
+[
+    {
+        "premise": "the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the president of Bokolulu and that the president of Bokolulu was assassinated in 1420. Therefore, it can be logically inferred that Avirusham Hajki was the one who was assassinated in 1420, as stated in Text 2."
+        }
+    },
+    {
+        "premise": "the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "False",
+            "model_reply": "The relationship between Text 1 and Text 2 is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the mayor of Bokolulu and that the mayor of Bokolulu was assassinated in 1420. Therefore, it can be logically inferred that Avirusham Hajki was the one who was assassinated in 1420, as stated in Text 2."
+        }
+    },
+    {
+        "premise": "the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "False",
+            "model_reply": "The relationship between Text 1 and Text 2 is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the governor of Bokolulu and that the governor of Bokolulu was assassinated in 1420. Therefore, it can be logically inferred that Avirusham Hajki was the one who was assassinated in 1420, as stated in Text 2."
+        }
+    },
+    {
+        "premise": "the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was assassinated.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was assassinated.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was assassinated.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was assassinated.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the Prime Minister of Bokolulu and that the Prime Minister of Bokolulu was assassinated in 1420. Based on this information, it can be logically inferred that Avirusham Hajki was the one who was assassinated in 1420, as stated in Text 2. Therefore, Text 2 is true given the information in Text 1."
+        }
+    },
+    {
+        "premise": "the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the president of Bokolulu was Avirusham Hajki. in the year of 1420, the president of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the president of Bokolulu and that the president of Bokolulu was impeached in 1420. Since Avirusham Hajki was the president, it logically follows that Avirusham Hajki was the one impeached in 1420, as stated in Text 2. Therefore, Text 2 is true given Text 1."
+        }
+    },
+    {
+        "premise": "the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the mayor of Bokolulu was Avirusham Hajki. in the year of 1420, the mayor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the mayor of Bokolulu and that the mayor of Bokolulu was impeached in 1420. Since Avirusham Hajki was the mayor, it logically follows that Avirusham Hajki was the one impeached in 1420, as stated in Text 2. Therefore, Text 2 is true given the information in Text 1."
+        }
+    },
+    {
+        "premise": "the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the governor of Bokolulu was Avirusham Hajki. in the year of 1420, the governor of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the governor of Bokolulu and that the governor of Bokolulu was impeached in 1420. Since Avirusham Hajki was the governor, it logically follows that Avirusham Hajki was the one impeached in 1420, as stated in Text 2. Therefore, Text 2 is true given the information in Text 1."
+        }
+    },
+    {
+        "premise": "the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was Impeached.",
+        "false_hypothesis": "in the year 1420, Avirusham Hajki was Impeached.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): the Prime minister of Bokolulu was Avirusham Hajki. in the year of 1420, the Prime minister of Bokolulu was Impeached.\nText 2 (Hypothesis): in the year 1420, Avirusham Hajki was Impeached.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that Avirusham Hajki was the Prime Minister of Bokolulu and that the Prime Minister of Bokolulu was impeached in 1420. Since Avirusham Hajki was the Prime Minister, it can be inferred that he was the one who was impeached in 1420, making Text 2 true given Text 1."
+        }
+    },
+    {
+        "premise": "I recently had a terrible sandwich. I ate a chicken sandwich yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken sandwich.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I recently had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I recently had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I recently had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible sandwich and that it was a chicken sandwich they ate yesterday. Text 2 combines these two pieces of information to conclude that the speaker had a terrible chicken sandwich yesterday. Since Text 1 provides the necessary information to support Text 2, the relationship between the two texts is True."
+        }
+    },
+    {
+        "premise": "I recently had a terrible soup I ate a chicken soup yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken soup.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I recently had a terrible soup I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "contradiction",
+            "model_reply": "Entailment"
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I recently had a terrible soup I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I recently had a terrible soup I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible soup and that it was a chicken soup they ate yesterday. \nText 2 combines these two pieces of information to conclude that the speaker had a terrible chicken soup yesterday. \nSince Text 2 is a direct inference from Text 1, the relationship between the two texts is True."
+        }
+    },
+    {
+        "premise": "I recently had a terrible salad. I ate a chicken salad yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken salad.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I recently had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I recently had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I recently had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible salad and that they ate a chicken salad yesterday. Text 2 combines these two pieces of information to conclude that the speaker had a terrible chicken salad yesterday. This conclusion is supported by the information provided in Text 1, making the relationship between the two texts True."
+        }
+    },
+    {
+        "premise": "I had a terrible sandwich. I ate a chicken sandwich yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken sandwich.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I had a terrible sandwich. I ate a chicken sandwich yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken sandwich.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible sandwich and that it was a chicken sandwich they ate yesterday. Text 2 combines these two pieces of information to conclude that the speaker had a terrible chicken sandwich yesterday. Since Text 2 logically follows from the information provided in Text 1, the relationship between the two texts is True."
+        }
+    },
+    {
+        "premise": "I had a terrible soup. I ate a chicken soup yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken soup.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I had a terrible soup. I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I had a terrible soup. I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I had a terrible soup. I ate a chicken soup yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken soup.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible soup and that it was a chicken soup they ate yesterday. Text 2 combines these two pieces of information to conclude that the speaker had a terrible chicken soup yesterday. Since Text 2 is a logical combination of the information provided in Text 1, it can be considered True given the premise."
+        }
+    },
+    {
+        "premise": "I had a terrible salad. I ate a chicken salad yesterday.",
+        "false_hypothesis": "yesterday I had a terrible chicken salad.",
+        "entailment_with_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: entailment, neutral, or contradiction.\n Entailment: Text 1 logically implies Text 2.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nContradiction: Text 1 contradicts Text 2.\nReply in one word exactly. Question:\nText 1 (Premise): I had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "contradiction",
+            "model_reply": "Entailment."
+        },
+        "entailment": {
+            "prompt": "You are given two texts, Text 1 and Text 2, and asked to answer a yes/no question about their relationship. \nThe answer should only be \"Yes\" or \"No.\"\nQuestion:\nText 1 (Premise): I had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "no",
+            "model_reply": "Yes."
+        },
+        "true_false_neutral": {
+            "prompt": "You are given a premise (Text 1) and a hypothesis (Text 2), and asked to determine the relationship between the two texts by selecting one of three options: True, Neutral, or False.\nThe possible answers are:\nTrue: Text 2 is True given Text 1.\nNeutral: Text 1 and Text 2 are unrelated, neither supporting nor contradicting each other.\nFalse: Text 1 contradicts Text 2. \n\nQuestion:\nText 1 (Premise): I had a terrible salad. I ate a chicken salad yesterday.\nText 2 (Hypothesis): yesterday I had a terrible chicken salad.",
+            "answer": "False",
+            "model_reply": "The answer is: True.\n\nExplanation: \nText 1 states that the speaker had a terrible salad and that it was a chicken salad they ate yesterday. Text 2 combines these two pieces of information to conclude that the speaker had a terrible chicken salad yesterday. Since Text 2 is a logical conclusion based on the information provided in Text 1, the relationship between the two texts is True."
+        }
+    }
+]
