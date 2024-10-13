@@ -12,12 +12,9 @@ def main():
                      'is_answer_in_reply': [],
                      'prompt': [],
                      }
-    files_starts = [('claude', "results/claude-3-5-sonnet_20240620_"),
-                    ('gemini', 'results/gemini-1.5-pro-002_'),
+    files_starts = [('gemini', 'results/gemini-1.5-pro-002_'),
                     ('llama', 'results/Meta-Llama-3.1-405B-Instruct-Turbo_')]
-    files_ends = ["14_prompts_absolute_temporal_3_types",
-                  "30_prompts_relative_temporal_3_types",
-                  "44_prompts_salva_varitate_3_types"]
+    files_ends = ["14_prompts_absolute_temporal_3_types"]
     prompt_types = ['entailment_with_neutral', 'true_false_neutral', 'entailment']
 
     for file_end in files_ends:
