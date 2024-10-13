@@ -28,7 +28,7 @@ def main():
                     data['gold_answer'].append(gold_answer)
                     model_reply = prompt_structure[prompt_type]['model_reply']
                     data['model_reply'].append(model_reply)
-                    data['is_answer_in_reply'].append(gold_answer.lower() in model_reply.lower())
+                    data['is_answer_in_reply'].append(gold_answer.lower().split()[0] == model_reply.lower().split()[0] or gold_answer.lower().split()[0] in model_reply.lower())
                     data['prompt'].append(prompt_structure[prompt_type]['prompt'])
         df = pd.DataFrame(data)
         df.to_excel('results/unified_results_' + file_end + '.xlsx',
