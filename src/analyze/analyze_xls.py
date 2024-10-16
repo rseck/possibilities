@@ -13,21 +13,22 @@ def main():
         if os.path.isfile(file_path):
             match filename:
                 case "unified_results_44_prompts_salva_varitate_3_types manually.xlsx":
-                    title = f'success rates in salva varitate prompts'
+                    title = f'Success Rates In Identifying\nFallacy Of Salva Veritate In Opaque Contextss'
                     open_xl_and_print_plot(file_path, title, "success")
                 case "unified_results_20_prompt_other_possibilities_expanded_3_types with manually parsed results.xlsx":
-                    title = f'success rates in direct reasoning when asked to provide other possibilities'
+                    title = (f'Success Rate For Determining The Original Inferential Relationship\n'
+                             f'When Asked To Provide Other possibilities')
                     open_xl_and_print_plot(file_path, title, "success with base answer")
-                    title_2 = f'success rates in providing other possibilities direct reasoning'
+                    title_2 = f'Success Rate For Altering The premise\n To Shift The Inference Relation'
                     open_xl_and_print_plot(file_path, title_2, "success with other possibilities")
                 case "unified_results_14_prompts_absolute_temporal_3_types manual.xlsx":
-                    title = f'success rates in absolute temporal prompts'
+                    title = f'Success Rates In Absolute Temporal Relations'
                     open_xl_and_print_plot(file_path, title, "success")
                 case "unified_results_102_prompts_relation_determine_1_type manually.xlsx":
-                    title = f'success rates in relation determining'
+                    title = f'Success Rates In Identifying Relations'
                     open_xl_and_print_plot(file_path, title, "success")
                 case "unified_results_30_prompts_relative_temporal_3_types with manually parsed results.xlsx":
-                    title = f'success rates in relative temporal prompts'
+                    title = f'Success Rates In Relative Temporal Relations'
                     open_xl_and_print_plot(file_path, title, "success")
 
 
@@ -49,6 +50,7 @@ def open_xl_and_print_plot(file_path, title, column):
         labels=['False', 'True'], colors=['red', 'lightgreen'])
     plt.ylabel('')
     plt.title(title)
+    plt.savefig(f'{title}.jpg', format='jpg', dpi=300)
     plt.show()
 
 
